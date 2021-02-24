@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    #me{
+        height: 100vh;
+        width: 40cm;
+    }
+    .container {
+        font-size: 23px;
+        background-color:rgb(214, 205, 205);
+        border: 2px solid grey;
+        padding: 34px;
+        margin: 4px;
+        text-align: center;
+    }
+
+    #time {
+        font-weight: bold;
+    }
+</style>
+<body>
+    <nav id="navbar">
+        
+        </div>
+        <ul>
+            <li class="item"><a href="#home-section">Home</a></li>
+            <li class="item"><a href="#services-container">Our Services</a></li>
+            <li class="item"><a href="#client-section">Our Clients</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">CINO</h1>
+    </section> 
+    <div class="container">
+        Current time is <span id="time"></span>
+    </div>
+    <script>
+        console.log("This is date and time tutorial");
+        let now = new Date();
+        console.log(now);
+
+        let dt = new Date(1000);
+        console.log(dt);
+
+        // let newDate = new Date("2029-09-30");
+        // console.log(newDate)
+
+        // let newDate = new Date(year, month, date, hours, minutes, seconds, milliseconds);
+        let newDate = new Date(3020, 4, 6, 9, 3, 2, 34);
+        console.log(newDate);
+
+        let yr = newDate.getFullYear();
+        console.log("The year is ", yr);
+
+        let dat = newDate.getDate();
+        console.log("The date is ", dat);
+
+        let month = newDate.getMonth();
+        console.log("The month is ", month);
+
+        let hours = newDate.getHours();
+        console.log("The hours is ", hours);
+
+        newDate.setDate(8);
+        newDate.setMinutes(29);
+        console.log(newDate)
+        setInterval(updateTime, 1000);
+
+        function updateTime() {
+            time.innerHTML = new Date();
+        }
+        </script>
+    <section id="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="p1.jpg" alt="">
+                <h2 class="h-secondary center">Food Catering</h2>
+                <p class="center">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, a! Ea quaerat quae sit vel ipsum necessitatibus, in sapiente voluptatibus pariatur veritatis magnam dignissimos excepturi illum et iure tenetur officia.
+                </p>
+            </div>
+            <div class="box">
+                <img src="de.jpg" alt="">
+                <h2 class="h-secondary center">Bulk Ordering</h2>
+                <p class="center">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, a! Ea quaerat quae sit vel ipsum necessitatibus, in sapiente voluptatibus pariatur veritatis magnam dignissimos excepturi illum et iure tenetur officia.
+                </p>
+            </div>
+            <div class="box">
+                <img src="deli2.jpg" alt="">
+                <h2 class="h-secondary center">Food Ordering</h2>
+                <p class="center">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, a! Ea quaerat quae sit vel ipsum necessitatibus, in sapiente voluptatibus pariatur veritatis magnam dignissimos excepturi illum et iure tenetur officia.
+                </p>
+            </div>
+        </div>
+        <section id="client-section">
+            <h1 class="h-primary center">Our Clients</h1>
+            <div id="client">
+                <div class="clinet-item"></div>
+                    <img src="appae2.jpg" alt="Our Clients">
+                    <img src="hp.jpg" alt="Our Clients">
+                </div>
+            </div>
+        </section>
+        <section id="contact-section">
+            <h1 class="h-primary center">Contact Us</h1>
+            <div id="contact">
+                <div class="contact-item">
+                    <center><h1 id="enquiry">ENQUIRY FORM</h1></center>
+                    <p></p>
+                    <center><p id="ca">Please complete the form below for all enquiries regarding feedback, media, and general questions. If you wish to join the team at Cino, please forward your resume to contact@cino.com, advising the position you are seeking</p></center>
+                                   
+                    <center>
+                    <img id="con" src="dr.jpg" alt="">
+                    <img id="con" src="drs2.jpg" alt="">
+                   </center>
+    <h3>
+    <form>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email Id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </form>
+    </h3>
+</center>
+</div>
+</div>
+</section>
+</body>
+</html>
